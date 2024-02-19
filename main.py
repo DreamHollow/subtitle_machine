@@ -11,6 +11,9 @@ def process_time():
     write(sequence)
     write("\n")
 
+    # Starting time code
+    
+    print("Entering timecode beginning...")
     print("Enter the hour indicator (2 digits):")
     hours = input()
 
@@ -23,11 +26,31 @@ def process_time():
     print("Enter the milliseconds (3 digits):")
     milliseconds = input()
 
-    # Combine all this data into a huge string
+    big_string_one=str(hours)+":"+str(minutes)+":"+str(seconds)+","+str(milliseconds)
+    write(big_string_one)
+    write(" ")
+    write("-->")
+    write(" ")
 
-    big_string=str(hours)+":"+str(minutes)+":"+str(seconds)+","+str(milliseconds)
-    write(big_string)
+    # Ending time code
+
+    print("Enter the hour indicator (2 digits):")
+    hours_ = input()
+
+    print("Enter the minutes indicator (2 digits):")
+    minutes_ = input()
+
+    print("Enter the seconds indicator (2 digits):")
+    seconds_ = input()
+
+    print("Enter the milliseconds (3 digits):")
+    milliseconds_ = input()
+    
+    big_string_two=str(hours_)+":"+str(minutes_)+":"+str(seconds_)+","+str(milliseconds_)
+    write(big_string_two)
     write("\n")
+
+    # Subtitles
 
     print("Please write the appropriate subtitle:")
     subtitle_string = input()
