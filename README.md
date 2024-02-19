@@ -1,4 +1,4 @@
-# Subtitle Machine (name pending)
+# Subtitle Machine
 A terminal-based program that easily writes out compliant SRT files quickly.
 
 BRANCHES
